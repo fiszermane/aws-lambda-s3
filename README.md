@@ -10,6 +10,7 @@ Some pages like this one (https://rpadovani.com/aws-textract) where incredibly h
 
 # What does this do
 Code will execute once an object is uploaded to the Input S3, run Textract and return a .JSON in the Output S3.
+It is designed to recognize a PDF and transform it to JSON. From there it can only be done much better.
 Many of the examples I've seen had an overload of Lambda Functions, SNS Topics and so many building blocks that were confusing to me as a newbie to AWS Cloud. I managed to achieve my objectives with much less than what I found online - it's likely less robust but it did serve my purposes quite well.
 
 # Steps
@@ -25,5 +26,7 @@ Many of the examples I've seen had an overload of Lambda Functions, SNS Topics a
 9. The Destination S3 is only referenced in the code and will not show up.
 10. You can enable the function and try it. I cannot remember having a valid test case for these.
 
-# TODO
-Tutorial to come later.
+# TODOs
+- Tutorial to come later.
+- Detect if the file is PDF.
+- Define business rules for the specific PDFs uploaded
