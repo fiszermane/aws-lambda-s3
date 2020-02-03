@@ -1,7 +1,7 @@
 # aws-lambda-s3
 This is another S3->Textract->S3 sample. I struggled so much to find online information so I am publishing mine. Perhaps it may help someone. I took the code from multiple pages I found online and made some adjustments so it can fit this use case.
 
-Some pages like this one (https://rpadovani.com/aws-textract) where incredibly helpful. This was another one (https://auxenta.com/blog_aws_textract_with_lambda_walkthrough.php). There are a ton others so I'm sorry if you recognize your code and is not credited.
+Some pages like this one (https://rpadovani.com/aws-textract) where incredibly helpful. This was another one (https://auxenta.com/blog_aws_textract_with_lambda_walkthrough.php). There are a ton others so I'm sorry if you recognize your code and is not credited. Let me know and I will add this.
 
 # Requires
 -> S3 Bucket - Input
