@@ -5,9 +5,9 @@ import time
 
 print('Loading function')
 
-s3 = boto3.client('s3')
-textract_client = boto3.client('textract')
-s3_destination = boto3.resource('s3').Bucket('DESTINATION-BUCKET') # Here goes the Destination S3 Bucket
+s3 = boto3.client('s3') # this would be the origin bucket which will be connected automatically through the UI.
+s3_destination = boto3.resource('s3').Bucket('DESTINATION-BUCKET') # Here goes the Destination S3 Bucket which is not referenced in the UI
+textract_client = boto3.client('textract') # Standard Textract Call.
 
 # Optional
 SNS_TOPIC_ARN = 'arn:aws:sns:'
